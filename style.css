@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"Poppins";
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color:hsl(0, 0%, 94%);
+}
+.card{
+    position: relative;
+    box-shadow: -5px -1px 36px 1px rgba(0,0,0,0.19);
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    border-radius: 3%;
+    border-bottom-right-radius: 20%;
+}
+.form_age{
+    position: relative;
+    margin: 20px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    height: 90px;
+    border-bottom: 1px solid hsl(0, 0%, 94%);
+}
+.day{
+    display: flex;
+    flex-direction: column;
+}
+.month{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+
+}
+.year{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+label{
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+    height: 20px;
+    font-size: 15px;
+    text-align: start;
+    color: hsl(0, 1%, 44%);
+}
+
+input{
+    font-weight: 600;
+    font-size: 23px;
+    border: hsl(0, 0%, 94%) 1px solid;
+    border-radius: 10%;
+    text-align: center;
+    width: 90px;
+    height: 40px;
+}
+button{
+    position: absolute;
+    top: 84px;
+    right: 50px;
+    cursor: pointer;
+    background-color: hsl(259, 100%, 65%);
+    border: none;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+}
+button img{
+    width: 30px;
+    height: 30px;
+}
+.result{
+    display: flex;
+    flex-direction: column;
+}
+.result div{
+    font-style: italic;
+    font-weight: 800;
+    font-size:50px ;
+    color: #000;
+}
+.result span{
+    color: hsl(259, 100%, 65%);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+p{
+    color:hsl(0, 100%, 67%);
+}
+@media only screen and (max-width: 375px) {
+    .card{
+        width: 315px;
+    }
+    button{
+        top: 113px;
+        right: 44%;
+    }
+    .form_age{
+        width: 100%;
+        height: 125px;
+        padding-left: 0px;
+        margin: 10px;
+    }
+    input{
+        width: 80px;
+    }
+    .result{
+        margin-top:36px ;
+    }
+}
